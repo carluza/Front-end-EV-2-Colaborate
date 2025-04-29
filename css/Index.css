@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* estilos de body */
+body {
+  background-color: #f7efd2;
+  font-family: 'Arial', sans-serif;
+}
+
+/* barra de navegación */
+.Barra-Nav {
+  background-color: #4b5e39;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+/* logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+.logo span {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* menu de navegación */
+.Links-Nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.Links-Nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+/* botones */
+.btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.iniciar-sesion-btn {
+  background-color: white;
+  color: black !important;
+}
+.registrar-btn {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+/* banner */
+.banner {
+  width: 100%;
+  height: 500px;
+  background-image: url("../Assets/img/Banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 60px;
+}
+.banner-texto {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: bold;
+  max-width: 40%;
+}
+
+/* — texto de nuestra mision — */
+.Texto1 {
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 1.6;
+}
+
+/* — datos e imagen central — */
+.DatosImagenCentral {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto 100px auto;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.ImagenCentral {
+  grid-column: 1 / 3;
+}
+.ImagenCentral img {
+  max-width: 100%;
+  height: auto;
+}
+.dato {
+  background-color: #f2e3b9;
+  padding: 40px;
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-weight: bold;
+}
+.dato-izq-arriba {
+  grid-column: 1 / 2;
+  background-color: #E9D2AD;
+}
+.dato-der-arriba {
+  grid-column: 2 / 3;
+  background-color: #B8CD9F;
+}
+.dato-izq-abajo {
+  grid-column: 1 / 2;
+  background-color: #A5A97B;
+}
+.dato-der-abajo {
+  grid-column: 2 / 3;
+  background-color: #EDC585;
+}
+
+/* — texto nuestra vision — */
+.Texto2 {
+  width: 100%;
+  background-color: #A5A97B;
+  padding: 40px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+/* — footer — */
+.footer {
+  background-color: #3e5d3d;
+  color: white;
+  padding: 40px 20px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.footer-section {
+  max-width: 320px;
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.footer-section h2,
+.footer-section h3 {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.logo-footer {
+  height: 25px;
+  margin-right: 8px;
+}
+.footer-section a {
+  color: #b2e7b2;
+  text-decoration: none;
+  border-bottom: 1px solid #b2e7b2;
+}
+.footer-section a:hover {
+  color: #ffffff;
+  border-bottom: 1px solid white;
+}
+.footer-bottom {
+  text-align: center;
+  padding-top: 25px;
+  border-top: 1px solid #5a7d58;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.icono-texto {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.ecofood-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* — nuevas seccion ¿Quiénes Somos? y Qué hacemos — */
+.contenido-quienes-somos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  width: 90%;          /* ocupa el 90% del viewport */
+  max-width: 1400px;   /* no crece más de 1400px */
+  margin: 0 auto;      /* lo centra horizontalmente */
+}
+
+.imagen1 img {
+  width: 600px;
+  height: auto;
+  border-radius: 5px;
+}
+.texto-quienes-somos {
+  flex: 1;
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #A5A97B;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.texto-quienes-somos h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #2a851e;
+}
+
+.contenido-que-hacemos {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  width: 90%;         /* ocupa el 90% del viewport */
+  max-width: 1400px;  /* no crece más de 1400px */
+  margin: 0 auto;   /* lo centra horizontalmente */
+}
+.imagen2 {
+  margin-left: 10px;
+}
+.imagen2 img {
+  width: 600px;
+  height: auto;
+  border-radius: 5px;
+}
+.texto-que-hacemos {
+  flex: 1;
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #A5A97B;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.texto-que-hacemos h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #2a851e;
+}
+.texto-que-hacemos h2 {
+  margin-top: 20px;
+  color: #000;
+}

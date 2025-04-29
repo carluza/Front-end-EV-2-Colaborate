@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7efd2;
+  font-family: 'Arial', sans-serif;
+}
+
+.Barra-Nav {
+  background-color: #4b5e39;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.Links-Nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.Links-Nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.iniciar-sesion-btn {
+  background-color: white;
+  color: black !important;
+  display: inline-block;
+  text-align: center;
+}
+
+.registrar-btn {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+/* estilos del contenedor principal */
+.contenedor-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/*formulario de inicio de sesión */
+.formulario-inicio-sesion {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  width: 500px;
+  margin-left: 20px;
+}
+
+.formulario-inicio-sesion h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.formulario-inicio-sesion label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.formulario-inicio-sesion input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.formulario-inicio-sesion button {
+  background-color: #4b5e39;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/*imagen fija */
+.imagen-fija {
+  margin-right: 20px;
+}
+
+.imagen-fija img {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* link para recuperar la contraseña */
+.recuperar-contraseña-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #000000;
+}
+
+.recuperar-contraseña-link a {
+  color: #0838b3;
+  text-decoration: none;
+}
+
+.recuperar-contraseña-link a:hover {
+  text-decoration: underline;
+}
+
+/* footer */
+.footer {
+  background-color: #3e5d3d;
+  color: white;
+  padding: 40px 20px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  max-width: 320px;
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.footer-section h2, .footer-section h3 {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.logo-footer {
+  height: 25px;
+  margin-right: 8px;
+}
+
+.footer-section a {
+  color: #b2e7b2;
+  text-decoration: none;
+  border-bottom: 1px solid #b2e7b2;
+}
+
+.footer-section a:hover {
+  color: #ffffff;
+  border-bottom: 1px solid white;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 25px;
+  border-top: 1px solid #5a7d58;
+  font-size: 14px;
+  margin-top: 20px;
+}
