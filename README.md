@@ -1,2 +1,2 @@
 # Front-end-EV-2-Colaborate
-Proyecto universitario de la asignatura Front-End Segunda evaluación.
+Este proyecto es parte de la segunda evaluación de la asignatura Desarrollo Front-End y consiste en una página web informativa sobre sostenibilidad alimentaria, desarrollada con HTML5, CSS3, JavaScript y el framework Bootstrap 5 para lograr un diseño moderno, funcional y completamente responsivo.
