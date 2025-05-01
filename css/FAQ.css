@@ -10,7 +10,7 @@
     font-family: 'Arial', sans-serif;
   }
   
-  /* barra de navegacion */
+  /* barra de navegación */
   .Barra-Nav {
     background-color: #4b5e39;
     color: white;
@@ -48,7 +48,7 @@
     transition: 0.3s ease;
   }
   
-  /* botones de iniciar sesion y registro */
+  /* botones */
   .btn {
     padding: 10px 20px;
     border-radius: 30px;
@@ -63,5 +63,3 @@
     background-color: #1c1c1c;
     color: white;
   }
-
-  
