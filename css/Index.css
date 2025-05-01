@@ -64,27 +64,32 @@ body {
   color: white;
 }
 
-/* banner */
+/* Banner */
 .banner {
   width: 100%;
   height: 500px;
-  background-image: url("../Assets/img/Banner.png");
+  background-image: url('assets/img/Banner.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
+  display: flex; 
   align-items: center;
-  justify-content: start;
-  padding-left: 60px;
-}
-.banner-texto {
-  color: rgb(255, 255, 255);
-  font-size: 24px;
-  font-weight: bold;
-  max-width: 40%;
+  justify-content: center;
+  padding-left: 0; 
 }
 
-/* — texto de nuestra mision — */
+/* frases dinámicas del banner */
+#motivational-quote {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  max-width: 80%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* texto de nuestra mision */
 .Texto1 {
   padding: 50px;
   text-align: center;
@@ -92,7 +97,7 @@ body {
   line-height: 1.6;
 }
 
-/* — datos e imagen central — */
+/* datos e imagen central */
 .DatosImagenCentral {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -135,7 +140,7 @@ body {
   background-color: #EDC585;
 }
 
-/* — texto nuestra vision — */
+/* texto nuestra vision */
 .Texto2 {
   width: 100%;
   background-color: #A5A97B;
@@ -146,7 +151,7 @@ body {
   box-sizing: border-box;
 }
 
-/* — footer — */
+/* footer */
 .footer {
   background-color: #3e5d3d;
   color: white;
@@ -205,15 +210,15 @@ body {
   font-weight: bold;
 }
 
-/* — nuevas seccion ¿Quiénes Somos? y Qué hacemos — */
+/* nuevas seccion ¿Quiénes Somos? y Qué hacemos */
 .contenido-quienes-somos {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px;
-  width: 90%;          /* ocupa el 90% del viewport */
-  max-width: 1400px;   /* no crece más de 1400px */
-  margin: 0 auto;      /* lo centra horizontalmente */
+  width: 90%;     
+  max-width: 1400px; 
+  margin: 0 auto; 
 }
 
 .imagen1 img {
@@ -244,9 +249,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 40px;
-  width: 90%;         /* ocupa el 90% del viewport */
-  max-width: 1400px;  /* no crece más de 1400px */
-  margin: 0 auto;   /* lo centra horizontalmente */
+  width: 90%;        
+  max-width: 1400px; 
+  margin: 0 auto;   
 }
 .imagen2 {
   margin-left: 10px;
