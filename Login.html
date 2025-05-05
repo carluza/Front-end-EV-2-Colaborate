@@ -2,60 +2,76 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Iniciar Sesión</title>
+    <title>Iniciar Sesión - EcoFood</title>
     <link rel="icon" href="assets/ico/IconoPestaña.ico">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <link rel="stylesheet" href="css/Login.css">
-</head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/Registrar.css">
+  </head>
 
 <body>
 
-  <!-- barra de navegación -->
+  <!-- Barra de navegación -->
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4b5e39;">
     <div class="container">
-      <!-- logo -->
+
       <a class="navbar-brand d-flex align-items-center" href="#">
         <img src="assets/ico/IconoPestaña.ico" alt="Logo de EcoFood" width="32" class="me-2">
         <span class="fs-4 fw-bold">EcoFood</span>
       </a>
-      <!-- toggler móvil -->
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
               aria-controls="mainNav" aria-expanded="false" aria-label="Mostrar menú">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <!-- menú -->
+
       <div class="collapse navbar-collapse justify-content-end" id="mainNav">
         <ul class="navbar-nav align-items-lg-center ms-auto gap-3">
           <li class="nav-item">
-            <a class="nav-link text-white fw-bold" href="Index.html">Inicio</a>
+            <a class="nav-link text-white fw-bold" href="Index.html">
+              <i class="fas fa-home me-1"></i> Inicio
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white fw-bold" href="Home.html">Home</a>
+            <a class="nav-link text-white fw-bold" href="Home.html">
+              <i class="fas fa-leaf me-1"></i> Home
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white fw-bold" href="Comentarios.html">Comentarios</a>
+            <a class="nav-link text-white fw-bold" href="Comentarios.html">
+              <i class="fas fa-comments me-1"></i> Comentarios
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white fw-bold" href="FAQ.html">FAQ</a>
+            <a class="nav-link text-white fw-bold" href="FAQ.html">
+              <i class="fas fa-question-circle me-1"></i> FAQ
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white fw-bold" href="Contacto.html">Contacto</a>
+            <a class="nav-link text-white fw-bold" href="Contacto.html">
+              <i class="fas fa-envelope me-1"></i> Contacto
+            </a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-dark btn-sm px-3" href="Registrar.html">Registrarse</a>
+            <a class="btn btn-light btn-sm px-3" href="Login.html">
+              <i class="fas fa-sign-in-alt me-1"></i> Iniciar Sesión
+            </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- sección principal -->
+
   <section class="container my-5">
     <div class="row justify-content-center">
       
-      <!-- imagen -->
+
       <div class="col-12 col-lg-6 mb-4 mb-lg-0">
         <img src="assets/img/Sostenibilidad%20Iniciar%20Secion.png" alt="Imagen fija" class="img-fluid rounded">
       </div>
@@ -66,7 +82,10 @@
           <h2 class="text-center mb-4">Iniciar Sesión</h2>
           <p class="text-center mb-4">¡Bienvenido de nuevo! Ingresa tus datos para continuar</p>
 
-          <form>
+
+          <div id="login-status"></div>
+
+          <form id="loginForm" novalidate>
             <div class="mb-3">
               <label for="email" class="form-label">Correo Electrónico</label>
               <input type="email" class="form-control" id="email" name="email" required>
@@ -86,56 +105,59 @@
             <small>¿Olvidaste tu contraseña? <a href="RecuperarContraseña.html">Recuperar Contraseña</a></small>
           </div>
 
+          <!-- para la demostración -->
+          <div class="mt-4 p-3 bg-light rounded text-center small">
+            <p class="mb-1 text-muted">Para la demostración, use las siguientes credenciales:</p>
+            <p class="mb-0 font-weight-bold">usuario@ecofood.org / 123456</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- footer -->
+  <!-- Footer -->
   <footer class="text-white py-5" style="background-color: #5a7d58; margin: 0;">
     <div class="container">
       <div class="row gy-4">
         
-        <!-- ecofood -->
+
         <div class="col-12 col-md-6 text-start">
           <div class="d-flex align-items-center mb-3">
             <img src="assets/ico/Icono.svg" alt="Logo de EcoFood" width="30" class="me-2">
             <span class="fs-4 fw-bold">EcoFood</span>
           </div>
           <div class="d-flex align-items-center mb-2">
-            <img src="assets/ico/Direccion.png" width="20" class="me-2" alt="Dirección">
+            <i class="fas fa-map-marker-alt me-2"></i>
             <span>Dirección: Calle Verde 123, Ciudad Sostenible.</span>
           </div>
           <div class="d-flex align-items-center mb-2">
-            <img src="assets/ico/telefono.png" width="20" class="me-2" alt="Teléfono">
+            <i class="fas fa-phone me-2"></i>
             <span>Fono: +56 9 1234 5678</span>
           </div>
           <div class="d-flex align-items-center">
-            <img src="assets/ico/correo.png" width="20" class="me-2" alt="Correo">
+            <i class="fas fa-envelope me-2"></i>
             <span>Correo Electrónico: contacto@ecofood.org</span>
           </div>
         </div>
 
-        <!-- redes sociales -->
         <div class="col-12 col-md-6 text-start">
           <div class="d-flex align-items-center mb-3">
             <span class="fs-4 fw-bold">Redes Sociales</span>
           </div>
           <div class="d-flex align-items-center mb-2">
-            <img src="assets/ico/facebook.png" width="20" class="me-2" alt="Facebook">
+            <i class="fab fa-facebook me-2"></i>
             <span>Facebook: EcoFoodOficial</span>
           </div>
           <div class="d-flex align-items-center mb-2">
-            <img src="assets/ico/instagram.png" width="20" class="me-2" alt="Instagram">
+            <i class="fab fa-instagram me-2"></i>
             <span>Instagram: @ecofood_oficial</span>
           </div>
           <div class="d-flex align-items-center">
-            <img src="assets/ico/twitter.png" width="20" class="me-2" alt="Twitter">
+            <i class="fab fa-twitter me-2"></i>
             <span>Twitter: @EcoFood_org</span>
           </div>
         </div>
 
-      <!-- copyright -->
       <div class="row mt-4">
         <div class="col-12 border-top border-light pt-3 text-center">
           <small>EcoFood © 2024. Todos los Derechos Reservados</small>
@@ -146,4 +168,3 @@
 
 </body>
 </html>
-

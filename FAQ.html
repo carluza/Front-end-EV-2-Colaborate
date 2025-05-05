@@ -2,45 +2,309 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Preguntas Frecuentes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preguntas Frecuentes | EcoFood Community</title>
+  
   <link rel="icon" href="assets/ico/IconoPestaña.ico">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/Comentarios.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/FAQ.css">  
+
 </head>
 <body>
 
   <!-- Barra de navegación -->
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4b5e39;">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="Index.html">
-        <img src="assets/ico/IconoPestaña.ico" alt="EcoFood Logo" width="32" class="me-2">
+
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/ico/IconoPestaña.ico" alt="Logo de EcoFood" width="32" class="me-2">
         <span class="fs-4 fw-bold">EcoFood</span>
       </a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
               aria-controls="mainNav" aria-expanded="false" aria-label="Mostrar menú">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse justify-content-end" id="mainNav">
-        <ul class="navbar-nav align-items-center gap-3">
+        <ul class="navbar-nav align-items-lg-center ms-auto gap-3">
           <li class="nav-item">
-            <a class="nav-link text-white fw-bold" href="Index.html">Inicio</a>
+            <a class="nav-link text-white fw-bold" href="Index.html">
+              <i class="fas fa-home me-1"></i> Inicio
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white fw-bold" href="Home.html">Home</a>
+            <a class="nav-link text-white fw-bold" href="Home.html">
+              <i class="fas fa-leaf me-1"></i> Home
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white fw-bold" href="Comentarios.html">Comentarios</a>
+            <a class="nav-link text-white fw-bold" href="Comentarios.html">
+              <i class="fas fa-comments me-1"></i> Comentarios
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white fw-bold" href="Contacto.html">Contacto</a>
+            <a class="nav-link text-white fw-bold" href="FAQ.html">
+              <i class="fas fa-question-circle me-1"></i> FAQ
+            </a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-light btn-sm px-3" href="Login.html">Iniciar Sesión</a>
+            <a class="nav-link text-white fw-bold" href="Contacto.html">
+              <i class="fas fa-envelope me-1"></i> Contacto
+            </a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-dark btn-sm px-3" href="Registrar.html">Registrarse</a>
+            <a class="btn btn-light btn-sm px-3" href="Login.html">
+              <i class="fas fa-sign-in-alt me-1"></i> Iniciar Sesión
+            </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <section class="hero-contact text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Preguntas Frecuentes</h1>
+      <p class="lead">Encuentra respuestas a las dudas más comunes sobre EcoFood Community y el desperdicio alimentario</p>
+    </div>
+  </section>
+
+  <!-- FAQ-->
+  <section class="faq-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          
+          <div class="accordion" id="faqAccordion">
+            
+            <div class="mb-4">
+              <h3 class="text-success mb-3">Sobre EcoFood Community</h3>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                    ¿Qué es EcoFood Community?
+                  </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    EcoFood Community es una plataforma que conecta establecimientos de alimentación con consumidores para reducir el desperdicio de alimentos. Nuestro objetivo es crear una comunidad comprometida con la sostenibilidad alimentaria, permitiendo que restaurantes, cafeterías y tiendas de comestibles puedan vender a precios reducidos aquellos productos que, estando en perfectas condiciones, no podrían comercializarse al día siguiente.
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    ¿Cómo funciona EcoFood Community?
+                  </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Nuestra plataforma permite a los negocios publicar paquetes de alimentos que sobrarían al final del día. Los usuarios pueden reservar estos paquetes a través de nuestra aplicación y recogerlos en el establecimiento durante un horario establecido. Este sistema beneficia a todas las partes: los establecimientos reducen pérdidas, los consumidores obtienen alimentos de calidad a precios reducidos, y juntos contribuimos a reducir el impacto ambiental del desperdicio alimentario.
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    ¿Cuál es la misión de EcoFood Community?
+                  </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Nuestra misión es transformar la manera en que gestionamos los excedentes alimentarios, creando un modelo sostenible que beneficie a todos. Buscamos reducir significativamente el desperdicio de alimentos, promover hábitos de consumo responsable y crear conciencia sobre el impacto ambiental de nuestras decisiones alimentarias. Queremos construir un futuro donde ningún alimento en buen estado termine en la basura.
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mb-4">
+              <h3 class="text-success mb-3">Para Consumidores</h3>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    ¿Cómo puedo registrarme como usuario?
+                  </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Registrarse es muy sencillo. Solo tienes que hacer clic en el botón "Registrarse" en la esquina superior derecha de nuestra página web. Completa el formulario con tus datos personales, crea una contraseña segura y acepta nuestros términos y condiciones. Una vez confirmado tu correo electrónico, podrás comenzar a explorar y reservar paquetes de alimentos inmediatamente.
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    ¿Cómo puedo reservar un paquete de alimentos?
+                  </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Para reservar un paquete, primero debes iniciar sesión en tu cuenta. Explora los paquetes disponibles en tu zona, consulta su contenido, precio y horario de recogida. Cuando encuentres uno que te interese, haz clic en "Reservar" y sigue las instrucciones para completar el pago. Recibirás una confirmación en tu correo electrónico con todos los detalles para recoger tu paquete en el establecimiento durante el horario indicado.
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading6">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                    ¿Qué calidad tienen los alimentos ofrecidos?
+                  </button>
+                </h2>
+                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Todos los alimentos ofrecidos en EcoFood Community son de primera calidad y aptos para el consumo. Se trata de productos que los establecimientos no podrían vender al día siguiente por normativas de frescura, pero que están en perfecto estado. Exigimos a nuestros socios comerciales que cumplan con todas las normativas de seguridad alimentaria y manipulación de alimentos para garantizar que recibes productos seguros y de calidad.
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mb-4">
+              <h3 class="text-success mb-3">Para Establecimientos</h3>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading7">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                    ¿Cómo puedo registrar mi negocio en EcoFood?
+                  </button>
+                </h2>
+                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Para registrar tu establecimiento, dirígete a la sección "Para Negocios" en nuestra página web y completa el formulario de registro. Necesitarás proporcionar información sobre tu negocio, incluyendo documentación legal, horarios de operación y categorías de productos que ofreces. Nuestro equipo revisará tu solicitud y te contactará para finalizar el proceso de incorporación y proporcionarte acceso a nuestra plataforma de gestión para comercios.
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading8">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                    ¿Qué beneficios obtengo al unirme como establecimiento?
+                  </button>
+                </h2>
+                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Al unirte a EcoFood Community, tu negocio obtiene múltiples beneficios: reducción de pérdidas económicas por alimentos no vendidos, generación de ingresos adicionales, atracción de nuevos clientes potenciales, mejora de la imagen de marca al mostrar compromiso con la sostenibilidad, y contribución positiva al medio ambiente al reducir desperdicios y emisiones de gases de efecto invernadero. Además, facilitamos la gestión con herramientas intuitivas para publicar tus paquetes en minutos.
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading9">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                    ¿Qué tipos de establecimientos pueden unirse?
+                  </button>
+                </h2>
+                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Damos la bienvenida a una amplia variedad de establecimientos, incluyendo restaurantes, cafeterías, panaderías, pastelerías, supermercados, fruterías, tiendas de comestibles y cualquier otro negocio del sector alimentario que genere excedentes de productos frescos y preparados. Si tu establecimiento maneja alimentos y tiene excedentes que normalmente se descartarían al final del día, eres un candidato ideal para unirte a nuestra comunidad.
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mb-4">
+              <h3 class="text-success mb-3">Sobre el Desperdicio Alimentario</h3>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading10">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                    ¿Por qué es importante reducir el desperdicio de alimentos?
+                  </button>
+                </h2>
+                <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    El desperdicio alimentario tiene graves consecuencias ambientales, sociales y económicas. Cada año, se desperdician aproximadamente 1,300 millones de toneladas de alimentos en el mundo, lo que representa un tercio de la producción mundial. Este desperdicio contribuye significativamente a las emisiones de gases de efecto invernadero, al uso ineficiente de recursos como agua, tierra y energía, y al hambre global. Reducir el desperdicio alimentario es esencial para construir un sistema alimentario más sostenible y equitativo.
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading11">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                    ¿Cuál es el impacto ambiental del desperdicio alimentario?
+                  </button>
+                </h2>
+                <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    El impacto ambiental del desperdicio alimentario es enorme. Si el desperdicio de alimentos fuera un país, sería el tercer mayor emisor de gases de efecto invernadero después de China y Estados Unidos. Cuando los alimentos terminan en vertederos, producen metano, un gas de efecto invernadero 25 veces más potente que el CO2. Además, desperdiciar alimentos significa desperdiciar todos los recursos utilizados para producirlos: agua, tierra, energía, trabajo y capital, así como generar contaminación innecesaria durante su producción y transporte.
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading12">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                    ¿Qué puedo hacer a nivel personal para reducir el desperdicio de alimentos?
+                  </button>
+                </h2>
+                <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Existen muchas acciones que podemos tomar en nuestra vida diaria para reducir el desperdicio alimentario: planificar las compras y hacer listas, almacenar correctamente los alimentos para maximizar su vida útil, comprender la diferencia entre "consumir preferentemente antes de" y "fecha de caducidad", aprovechar las sobras de comida en nuevas recetas, congelar alimentos que no se consumirán inmediatamente, y por supuesto, utilizar plataformas como EcoFood Community para rescatar alimentos que de otro modo se desperdiciarían.
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer class="text-white py-5" style="background-color: #5a7d58; margin: 0;">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-4 mb-3 mb-md-0">
+        <div class="d-flex align-items-center mb-3">
+          <img src="assets/ico/Icono.svg" alt="Logo de EcoFood" width="30" class="me-2">
+          <h5 class="mb-0 text-white">EcoFood Community</h5>
+        </div>
+        <p class="small">Conectamos establecimientos y consumidores para reducir el desperdicio alimentario y promover un consumo más responsable.</p>
+      </div>
+
+      <div class="col-md-3 mb-3 mb-md-0">
+        <h5 class="mb-3">Síguenos</h5>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-white fs-5"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white fs-5"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white fs-5"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <h5 class="mb-3">Contacto</h5>
+        <ul class="list-unstyled">
+          <li class="small"><i class="fas fa-map-marker-alt me-2"></i> Calle Ejemplo 123, Madrid</li>
+          <li class="small"><i class="fas fa-envelope me-2"></i> info@ecofood.com</li>
+          <li class="small"><i class="fas fa-phone me-2"></i> +34 900 123 456</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-12 border-top border-light pt-3 text-center">
+        <small>&copy; 2023 EcoFood Community. Todos los derechos reservados.</small>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>

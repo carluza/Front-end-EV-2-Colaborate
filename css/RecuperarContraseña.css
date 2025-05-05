@@ -66,7 +66,6 @@ body {
   color: white;
 }
 
-/*estilos del contenedor principal*/
 .contenedor-principal {
   display: flex;
   justify-content: center;
@@ -74,7 +73,6 @@ body {
   padding: 40px;
 }
 
-/*formulario de recuperar contraseña*/
 .formulario-recuperar-contraseña {
   background-color: white;
   padding: 40px;
@@ -114,7 +112,6 @@ body {
   width: 100%;
 }
 
-/*footer*/
 .footer {
   background-color: #3e5d3d;
   color: white;
@@ -167,4 +164,97 @@ body {
   border-top: 1px solid #5a7d58;
   font-size: 14px;
   margin-top: 20px;
+}
+
+.mensaje-validacion {
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.mensaje-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.mensaje-exito {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.barra-fuerza {
+  height: 6px;
+  background-color: #e9ecef;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.fuerza-nivel {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.fuerza-1 {
+  width: 20%;
+  background-color: #dc3545;
+}
+
+.fuerza-2 {
+  width: 40%;
+  background-color: #dc3545;
+}
+
+.fuerza-3 {
+  width: 60%;
+  background-color: #ffc107;
+}
+
+.fuerza-4 {
+  width: 80%;
+  background-color: #28a745;
+}
+
+.fuerza-5 {
+  width: 100%;
+  background-color: #28a745;
+}
+
+.formulario-recuperar-contraseña form input {
+  transition: border-color 0.3s ease;
+}
+
+.formulario-recuperar-contraseña form input:focus {
+  border-color: #5a7d58;
+  box-shadow: 0 0 0 0.2rem rgba(90, 125, 88, 0.25);
+}
+
+.formulario-recuperar-contraseña button {
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.formulario-recuperar-contraseña button:hover {
+  background-color: #4b5e39;
+}
+
+#indicador-fuerza small,
+#coincidencia-msg small {
+  font-size: 12px;
+}
+
+.text-danger {
+  color: #dc3545;
+}
+
+.text-success {
+  color: #28a745;
+}
+
+.mt-2 {
+  margin-top: 8px;
 }

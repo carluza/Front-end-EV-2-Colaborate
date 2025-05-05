@@ -1,67 +1,179 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* estilos de body */
-  body {
-    background-color: #f7efd2;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* barra de navegacion */
-  .Barra-Nav {
-    background-color: #4b5e39;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-  }
-  
-  /* logo */
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  .logo img {
-    width: 40px;
-    height: auto;
-    margin-right: 10px;
-  }
-  .logo span {
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  /* menu de navegación */
-  .Links-Nav {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-  }
-  .Links-Nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: 0.3s ease;
-  }
-  
-  /* botones de iniciar sesion y registro */
-  .btn {
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-weight: bold;
-    text-align: center;
-  }
-  .iniciar-sesion-btn {
-    background-color: white;
-    color: black !important;
-  }
-  .registrar-btn {
-    background-color: #1c1c1c;
-    color: white;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  
+/* estilos de body */
+body {
+  background-color: #f7efd2;
+  font-family: 'Arial', sans-serif;
+}
+
+/* barra de navegacion */
+.Barra-Nav {
+  background-color: #4b5e39;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.comments-section {
+  margin: 4rem auto;
+}
+
+.section-title {
+  color: #4b5e39;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.8rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background-color: #4CAF50;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Formulario de comentarios */
+.comment-form {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 3rem;
+  border-top: 4px solid #4CAF50;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #4b5e39;
+}
+
+.form-control {
+  border: 1px solid #e0e0e0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.25);
+}
+
+.input-group-text {
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  color: #6c757d;
+}
+
+.btn-submit {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+}
+
+.comments-list {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border-top: 4px solid #4CAF50;
+}
+
+.comment-card {
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.comment-card:hover {
+  transform: translateY(-5px);
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.comment-avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #e9f5e9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4b5e39;
+  font-weight: 600;
+}
+
+.comment-username {
+  font-weight: 600;
+  color: #4b5e39;
+  margin-bottom: 0;
+}
+
+.comment-text {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.comments-rotation {
+  margin-top: 1rem;
+}
+
+.progress {
+  height: 6px;
+  background-color: #e9ecef;
+}
+
+.progress-rotation {
+  background-color: #4CAF50;
+  transition: width 0.5s linear;
+}
+
+footer {
+  background-color: #5a7d58;
+  padding: 4rem 0 2rem;
+  margin-top: 4rem;
+}
+
+footer .fs-4 {
+  color: #ffffff;
+}
+
+footer i {
+  width: 20px;
+  text-align: center;
+}
+
+footer .border-top {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+ 
