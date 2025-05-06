@@ -7,7 +7,7 @@
 /* estilos de body */
 body {
   background-color: #f7efd2;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 /* barra de navegacion */
@@ -34,11 +34,11 @@ body {
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 60px;
   height: 3px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -51,7 +51,7 @@ body {
   padding: 2.5rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   margin-bottom: 3rem;
-  border-top: 4px solid #4CAF50;
+  border-top: 4px solid #4caf50;
 }
 
 .form-label {
@@ -67,7 +67,7 @@ body {
 }
 
 .form-control:focus {
-  border-color: #4CAF50;
+  border-color: #4caf50;
   box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.25);
 }
 
@@ -78,7 +78,7 @@ body {
 }
 
 .btn-submit {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   padding: 10px 25px;
@@ -98,7 +98,7 @@ body {
   border-radius: 12px;
   padding: 2.5rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  border-top: 4px solid #4CAF50;
+  border-top: 4px solid #4caf50;
 }
 
 .comment-card {
@@ -153,7 +153,7 @@ body {
 }
 
 .progress-rotation {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   transition: width 0.5s linear;
 }
 
@@ -174,4 +174,23 @@ footer i {
 
 footer .border-top {
   border-color: rgba(255, 255, 255, 0.2);
+}
+
+.hero-contact {
+  background-color: #667f4e;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.iniciar-sesion-btn {
+  background-color: white;
+  color: black !important;
+}
+.registrar-btn {
+  background-color: #1c1c1c;
+  color: white;
 }
