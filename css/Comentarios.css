@@ -176,4 +176,19 @@ footer .border-top {
   border-color: rgba(255, 255, 255, 0.2);
 }
 
+/* botones */
+.btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.iniciar-sesion-btn {
+  background-color: white;
+  color: black !important;
+}
+.registrar-btn {
+  background-color: #1c1c1c;
+  color: white;
+}
  
